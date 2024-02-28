@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 
 <head>
     <meta charset="UTF-8">
@@ -11,20 +11,46 @@
 
     <form name="kontakt_obrazac" action="" method="post" enctype="text/plain" autocomplete="off">
         </p>
-        <label for="ime">Ime i prezime</label>
-        <br>
-        <input id="ime" type="text" required>
+            <label for="ime">* Ime i prezime:</label>
+            <br>
+            <input id="ime" type="text" required>
         </p>
-        
+
         <p>
-        <label for="email">E-mail</label>
-        <br>
-        <input id="email" type="email" required>
+            <label for="email">* E-mail:</label>
+            <br>
+            <input id="email" type="email" placeholder="email@adresa.com" required>
+        </p>
+
+        <p>
+            <label for="spol">Spol:</label>
+            <!--
+            <select id="spol" name="spol">
+                <option value="M">Muško</option>
+                <option value="Ž">Žensko</option>
+            </select>
+            -->
+            <input type="radio" id="M" name="spol" value="M" checked>
+            <label for="M">Muško</label>
+            <input type="radio" id="Ž" name="spol" value="Ž">   
+            <label for="Ž">Žensko</label><br>
+        </p>
+
+        <p>
+            <label for="tel">Tel:</label>
+            <input id="tel" type="tel" name="spol" placeholder="091...">
+        </p>
+
+        <p>
+            <label for="opis">* Opis problema:</label><br>
+            <textarea id="opis" name="opis" rows="7" cols="50" maxlength="200" placeholder="Max 200 znakova..." required></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Pošalji">
         </p>
 
     </form>
-
-
 
 </body>
 </html>
