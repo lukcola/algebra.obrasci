@@ -52,8 +52,60 @@
         </p>
 
         <p>
-        <label for="dokument">Dokument/privitak:</label><br>
-        <input id="dokument" type="file">
+            <label for="dokument">Dokument/privitak:</label><br>
+            <input id="dokument" type="file">
+        </p>
+
+        <p>
+            <label for="username">Korisničko ime: </label><br>
+            <input id="username" type="text" size="10" minlength="3" maxlength="10" required><br>
+            <label for="password">Zaporka: </label><br>
+            <input id="password" type="password"><br>
+        </p>
+
+        <p>
+            <label for="boja">Odaberi boju:</label>
+            <input id="boja" type="color">
+        </p>
+
+        <p>
+            <input id="odabir" type="checkbox" checked>
+            <label for="odabir">Želim obavijesti na mail</label>
+        </p>
+
+        <p>
+            Ocjenite sadržaj stranice<br>
+            <label for="o1">1</label>
+            <input id="o1" name="ocjena" type="radio">
+            <label for="o2">2</label>
+            <input id="o2" name="ocjena" type="radio">
+            <label for="o3">3</label>
+            <input id="o3" name="ocjena" type="radio" checked>
+            <label for="o4">4</label>
+            <input id="o4" name="ocjena" type="radio">
+            <label for="o5">5</label>
+            <input id="o5" name="ocjena" type="radio">
+        </p>
+
+        <p>
+            <label for="grad">Odaberi grad: </label><br>
+            <select id="grad">
+                <option>Osijek</option>
+                <option>Rijeka</option>
+                <option>Split</option>
+                <option>Zagreb</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="grad2">Traži grad: </label>
+            <input id="grad2" type="text" list="gradovi">
+            <datalist id="gradovi">
+                <option>Osijek</option>
+                <option>Rijeka</option>
+                <option>Split</option>
+                <option>Zagreb</option>
+            </datalist>
         </p>
 
         <p>
