@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrasci</title>
+</head>
+
+<body>
+
+    <form name="kontakt_obrazac" action="" method="post" enctype="text/plain" autocomplete="off">
+        </p>
+            <label for="ime">* Ime i prezime:</label>
+            <br>
+            <input id="ime" type="text" required>
+        </p>
+
+        <p>
+            <label for="email">* E-mail:</label>
+            <br>
+            <input id="email" type="email" placeholder="email@adresa.com" required>
+        </p>
+
+        <p>
+            <label for="spol">Spol:</label>
+            <!--
+            <select id="spol" name="spol">
+                <option value="M">Muško</option>
+                <option value="Ž">Žensko</option>
+            </select>
+            -->
+            <input type="radio" id="M" name="spol" value="M" checked>
+            <label for="M">Muško</label>
+            <input type="radio" id="Ž" name="spol" value="Ž">   
+            <label for="Ž">Žensko</label><br>
+        </p>
+
+        <p> 
+            <label for="tel">Tel:</label>
+            <input id="tel" type="tel" name="spol" placeholder="091...">
+        </p>
+
+        <p>
+            <label for="opis">* Opis problema:</label><br>
+            <textarea id="opis" name="opis" rows="7" cols="50" maxlength="200" placeholder="Max 200 znakova..." required></textarea>
+        </p>
+
+        <p>
+            <label for="datum">Datum prijave:</label><br>
+            <input id="datum" type="date" min="2024-02-18" max="2024-02-29">
+        </p>
+
+        <p>
+            <label for="dokument">Dokument/privitak:</label><br>
+            <input id="dokument" type="file">
+        </p>
+
+        <p>
+            <label for="username">Korisničko ime: </label><br>
+            <input id="username" type="text" size="10" minlength="3" maxlength="10" required><br>
+            <label for="password">Zaporka: </label><br>
+            <input id="password" type="password"><br>
+        </p>
+
+        <p>
+            <label for="boja">Odaberi boju:</label>
+            <input id="boja" type="color">
+        </p>
+
+        <p>
+            <input id="odabir" type="checkbox" checked>
+            <label for="odabir">Želim obavijesti na mail</label>
+        </p>
+
+        <p>
+            Ocjenite sadržaj stranice<br>
+            <label for="o1">1</label>
+            <input id="o1" name="ocjena" type="radio">
+            <label for="o2">2</label>
+            <input id="o2" name="ocjena" type="radio">
+            <label for="o3">3</label>
+            <input id="o3" name="ocjena" type="radio" checked>
+            <label for="o4">4</label>
+            <input id="o4" name="ocjena" type="radio">
+            <label for="o5">5</label>
+            <input id="o5" name="ocjena" type="radio">
+        </p>
+
+        <p>
+            <label for="grad">Odaberi grad: </label><br>
+            <select id="grad">
+                <option>Osijek</option>
+                <option>Rijeka</option>
+                <option>Split</option>
+                <option>Zagreb</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="grad2">Traži grad: </label>
+            <input id="grad2" type="text" list="gradovi">
+            <datalist id="gradovi">
+                <option>Osijek</option>
+                <option>Rijeka</option>
+                <option>Split</option>
+                <option>Zagreb</option>
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Pošalji">
+        </p>
+
+        <p>
+            <input type="reset" value="Resetiraj podatke">
+        </p>
+
+    </form>
+
+</body>
+</html>
